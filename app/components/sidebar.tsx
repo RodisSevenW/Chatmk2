@@ -173,23 +173,12 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-
-<div className={styles["sidebar-action"]} style={{ position: "relative" }}>
-  <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
-    <IconButton icon={<GithubIcon />} shadow />
-  </a>
-  <a
-    href={"https://github.com/RodisSevenW?tab=repositories"}
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{ position: "absolute", right: "30px" }}
-  >
-    <IconButton icon={<GithubIcon />} shadow />
-  </a>
-</div>
-
-          
-        <div>
+          <div className={styles["sidebar-action"]}>
+            <a href={REPO_URL} target="_blank">
+              <IconButton icon={<GithubIcon />} shadow />
+            </a>
+          </div>
+        </div>
           <IconButton
             icon={<AddIcon />}
             text={shouldNarrow ? undefined : Locale.Home.NewChat}
