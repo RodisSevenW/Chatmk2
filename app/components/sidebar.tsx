@@ -176,8 +176,8 @@ export function SideBar(props: { className?: string }) {
           <div className={styles["sidebar-action"]}>
             <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
               <IconButton icon={<GithubIcon />} shadow />
-              
-          </div>
+        </div>
+            
             <div className={styles["sidebar-action"]} style={{ position: "relative" }}>
   <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
     <IconButton icon={<GithubIcon />} shadow />
@@ -192,7 +192,6 @@ export function SideBar(props: { className?: string }) {
   </a>
 </div>
 
-        </div>
         <div>
           <IconButton
             icon={<AddIcon />}
